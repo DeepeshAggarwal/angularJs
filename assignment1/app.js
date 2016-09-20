@@ -12,10 +12,10 @@ function lunchchecker($scope) {
     var items = $scope.items;
     if (items === '') {
       $scope.message = "Please enter data first";
-      $scope.isValid = false;
+      $scope.isValid = 'red';
     } else {
       items = items.split(',');
-      $scope.isValid = true;
+      $scope.isValid = 'green';
       var totalCount = 0;
       for (var i = 0; i < items.length; i++) {
         var item = items[i].trim();
